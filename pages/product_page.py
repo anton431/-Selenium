@@ -17,4 +17,11 @@ class ProguctPage(BasePage):
         price2 = self.browser.find_element(*ProductPageLocators.name_two).text
         assert price1 == price2, 'Name book is another'
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.success_massage), "Success message is presented, but should not be"
+
+    def should_dissapear_of_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.success_massage), "Success message is presented, but should disappeared"
+
+
 
