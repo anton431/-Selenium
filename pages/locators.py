@@ -4,6 +4,11 @@ class MainPageLocators():
 class LoginPageLocators():
     login_form = ('css selector', "#login_form")
     register_form =('css selector', "#register_form")
+    EMAIL = ('css selector', "#id_registration-email")
+    PASSWORD1 = ('css selector', "#id_registration-password1")
+    PASSWORD2 = ('css selector', "#id_registration-password2")
+    REGISTRATION = ('css selector', "[name='registration_submit']")
+
 
 class ProductPageLocators():
     button = ('css selector', '.btn.btn-lg.btn-primary')
@@ -18,3 +23,4 @@ class BasePageLocators():
     LOGIN_LINK = ('css selector', "#login_link")
     LOGIN_LINK_INVALID = ('css selector', "#login_link_inc")
     BASKET_LINK = ('css selector', ".btn-group .btn.btn-default")
+    USER_ICON = ('css selector', ".icon-user")
