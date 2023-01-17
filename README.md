@@ -1,3 +1,3 @@
 # Project
-First my project
+First my project.
 Test automation using Selenium and Python
